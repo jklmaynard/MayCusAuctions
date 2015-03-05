@@ -14,6 +14,6 @@ MayCusAuctions.LotController = Ember.ObjectController.extend({
 
     save: function() {
       this.set('isEditing', false);
-    }
+    },
   }
 });

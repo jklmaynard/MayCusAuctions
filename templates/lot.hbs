@@ -28,15 +28,15 @@
 
 <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
 
-{{outlet}}
 
 <h2>Items</h2>
 
-{{#each item in items itemController = "item"}}
-  <p>{{#link-to 'item' item}}
-    {{item.description}}
-    {{/link-to}}
-  </p>
-{{/each}}
+  {{#each item in items itemController = "item"}}
+    <p>{{#link-to 'item' item}}
+      {{item.description}}<br>
+      {{/link-to}}
+    </p>
+  {{/each}}
+  {{outlet}}
 
-<p>{{#link-to 'new-item' this class="btn btn-success"}}New Item{{/link-to}}</p>
+  <p>{{#link-to 'new-item' this class="btn btn-success"}}New Item{{/link-to}}</p>
