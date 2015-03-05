@@ -6,3 +6,8 @@
 li {
   list-style: none;
 }
+
+.item-thumbnail {
+  max-width: 150px;
+  max-height: 150px;
+}

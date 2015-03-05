@@ -3,13 +3,17 @@
 
 <ul>
   {{#each lot in model}}
-    <li>
-      <h3>{{lot.lotName}}</h3><br>
-      {{#link-to 'lot' lot}}
-        <img class="item-image" {{bind-attr src=lot.picture}}/>
-      {{/link-to}}<br>
-    </li>
+    <div class="col-md-4">
+      <li>
+        <h3>{{lot.lotName}}</h3><br>
+        {{#link-to 'lot' lot}}
+          <img class="item-image" {{bind-attr src=lot.picture}}/>
+        {{/link-to}}<br>
+      </li>
+    </div>
   {{/each}}
-</ul>
-
-{{#link-to 'new-lot' class="btn btn-primary"}}New lot{{/link-to}}
+</ul><br>
+<div class="col-md-12">
+  <br>
+  {{#link-to 'new-lot' class="btn btn-primary"}}New lot{{/link-to}}
+</div>

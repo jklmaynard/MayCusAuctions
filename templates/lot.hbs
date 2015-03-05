@@ -1,4 +1,6 @@
+<div class="col-md-12">
 <h2>{{lotName}}</h2>
+<p>Auction on {{sessionTime}}, in {{location}}</p>
 
 {{#if isEditing}}
 <form>
@@ -27,16 +29,22 @@
 {{/if}}
 
 <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+</div>
 
-
+<div class="col-md-4">
 <h2>Items</h2>
 
   {{#each item in items itemController = "item"}}
     <p>{{#link-to 'item' item}}
+      <img class="item-thumbnail" {{bind-attr src="item.image"}}><br>
       {{item.description}}<br>
       {{/link-to}}
     </p>
   {{/each}}
-  {{outlet}}
 
   <p>{{#link-to 'new-item' this class="btn btn-success"}}New Item{{/link-to}}</p>
+</div>
+
+<div class="col-md-8">
+  {{outlet}}
+</div>
