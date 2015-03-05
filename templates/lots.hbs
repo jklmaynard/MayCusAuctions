@@ -1,20 +1,19 @@
-<div id="lots">
-  <h1>I have a bridge to sell you.</h1>
 
-  <ul>
-    {{#each lot in model}}
-      <div class="col-md-4">
-        <li>
-          <h3>{{lot.lotName}}</h3><br>
-          {{#link-to 'lot' lot}}
-            <img class="item-image" {{bind-attr src=lot.picture}}/>
-          {{/link-to}}<br>
-        </li>
-      </div>
-    {{/each}}
-  </ul><br>
-  <div class="col-md-12">
-    <br>
-    {{#link-to 'new-lot' class="btn btn-primary"}}New lot{{/link-to}}
-  </div>
+<h1>I have a bridge to sell you.</h1>
+
+<ul>
+  {{#each lot in model}}
+    <div class="col-md-4">
+      <li>
+        <h3>{{lot.lotName}}</h3><br>
+        {{#link-to 'lot' lot}}
+          <img class="item-image" {{bind-attr src=lot.picture}}/>
+        {{/link-to}}<br>
+      </li>
+    </div>
+  {{/each}}
+</ul><br>
+<div class="col-md-12">
+  <br>
+  {{#link-to 'new-lot' class="btn btn-primary"}}New lot{{/link-to}}
 </div>
