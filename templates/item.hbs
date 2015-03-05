@@ -1,9 +1,13 @@
 <h2>{{description}}</h2>
+  <div class="col-md-6">
+  <ul>
+    <li>Owner: {{owner}} </li>
+    <li>Number: {{bidNumber}} </li>
+    <li>Starting Price: {{startPrice}} </li>
+    <li>History: {{history}} </li>
+  </ul>
 
-<ul>
-  <li>Owner: {{owner}} </li>
-  <li>Number: {{bidNumber}} </li>
-  <li>Starting Price: {{startPrice}} </li>
-  <li>History: {{history}} </li>
-  <li> {{image}} </li>
-</ul>
+  <div class="col-md-3">
+    <img class="item-image" {{bind-attr src=image}}/>
+  </div>
+</div>
