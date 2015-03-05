@@ -33,8 +33,9 @@
 <h2>Items</h2>
 
 {{#each item in items itemController = "item"}}
-  <p>
+  <p>{{#link-to 'item' item}}
     {{item.description}}
+    {{/link-to}}
   </p>
 {{/each}}
 
