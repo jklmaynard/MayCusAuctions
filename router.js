@@ -1,5 +1,6 @@
 MayCusAuctions.Router.map(function() {
-  this.resource('lots', {path: '/'});
+  this.resource('home', {path: '/'})
+  this.resource('lots');
   this.resource('lot', {path: '/:lot_id'}, function() {
     this.resource('new-item')
   });

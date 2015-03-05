@@ -1,0 +1,31 @@
+
+<h1>I have a bridge to sell you.</h1>
+
+<div>
+  <div id="auction-image-carousel" class="carousel slide" data="3000" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#auction-image-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#auction-image-carousel" data-slide-to="1"></li>
+      <li data-target="#auction-image-carousel" data-slide-to="2"></li>
+    </ol>
+
+      <div class="carousel-inner">
+        <div class="active item">
+          {{#link-to 'lots'}}<img class="img-carousel" src="http://static.panoramio.com/photos/large/269954.jpg">{{/link-to}}
+        </div>
+        <div class="item">
+          {{#link-to 'lots'}}<img class="img-carousel" src="http://static.panoramio.com/photos/large/3936984.jpg">{{/link-to}}
+        </div>
+        <div class="item">
+          {{#link-to 'lots'}}<img class="img-carousel" src="http://static.panoramio.com/photos/large/17734800.jpg">{{/link-to}}
+        </div>
+      </div>
+
+    <a class="carousel-control left" href="#auction-image-carousel" data-slide="prev">
+      <span class="glypicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#auction-image-carousel" data-slide="next">
+      <span class="glypicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
