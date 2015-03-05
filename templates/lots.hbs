@@ -1,0 +1,10 @@
+
+<h1>I have a bridge to sell you.</h1>
+
+<ul>
+  {{#each lot in model}}
+  <li>{{#link-to 'lot' lot}} {{lot.lotName}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-lot' class="btn btn-primary"}}New lot{{/link-to}}
