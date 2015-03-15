@@ -1,0 +1,13 @@
+.item-image {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+li {
+  list-style: none;
+}
+
+.item-thumbnail {
+  max-width: 150px;
+  max-height: 150px;
+}

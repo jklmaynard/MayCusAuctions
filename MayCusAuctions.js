@@ -1,0 +1,1 @@
+MayCusAuctions = Ember.Application.create();
